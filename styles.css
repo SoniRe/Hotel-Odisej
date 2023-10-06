@@ -1,0 +1,223 @@
+@font-face {
+  font-family: myFontWoodland;
+  src: url(./PPWoodland-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: myFontDMSans;
+  src: url(./dm-sans-v11-latin_latin-ext-regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: myFontDMSans;
+  src: url(./dm-sans-v11-latin_latin-ext-500.ttf);
+  font-weight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: myFontDMSans;
+  background-color: #f7f7ee;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  padding: 2vw 4vw;
+  position: relative;
+  z-index: 9;
+}
+
+#page1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#nav i {
+  display: flex;
+  font-size: 2.6vw;
+  font-weight: 100;
+}
+
+#page1 svg {
+  height: 6.5vw;
+  fill: #5b6647;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#page1 button {
+  padding: 0.8vw 1.5vw;
+  border: none;
+  font-size: 1vw;
+  border-radius: 20px;
+}
+
+#page1 button:nth-child(1) {
+  margin-right: 1vw;
+  color: #5b6647;
+  background-color: transparent;
+  border: 1px solid #5b6647;
+}
+
+#page1 button:nth-child(2) {
+  background-color: #5b6647;
+  color: #f7f7ee;
+}
+
+#page2 {
+  min-height: 150vh;
+  width: 100%;
+  background-color: #5b6647;
+  position: relative;
+}
+
+#page2 h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  font-size: 5vw;
+  line-height: 6vw;
+  font-family: myFontWoodland;
+  text-align: center;
+  color: #e3e3c4;
+  font-weight: 400;
+  opacity: 1;
+}
+
+#page2-bottom svg:nth-child(1) {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  fill: #5b6647;
+  z-index: 9;
+  height: 10vw;
+  transition: all ease 0.5s;
+}
+
+#page2-bottom svg:nth-child(2) {
+  position: absolute;
+  fill: #e3e3c4;
+  bottom: -10%;
+  height: 10vw;
+  transition: all ease 0.7s;
+}
+
+#page3 {
+  min-height: 200vh;
+  width: 100%;
+  background-color: #f7f7ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: -9;
+}
+
+#page3 h1 {
+  width: 59%;
+  font-size: 5vw;
+  text-align: center;
+  font-family: myFontWoodland;
+  color: #434b34;
+  line-height: 5.5vw;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page3-part1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10vw;
+  padding: 9vw;
+  /* background-color: red; */
+}
+
+#page3-part1 img {
+  height: 60vh;
+  width: 45vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+#page3-part2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8vw;
+  flex-direction: column;
+  position: absolute;
+  top: 49%;
+  left: 10%;
+}
+
+#page3-part2-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page3-part2 img {
+  height: 50vh;
+  width: 36vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+#page3 > img {
+  position: absolute;
+  bottom: 7.5%;
+  right: 32.5%;
+  height: 40vh;
+  width: 20vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+#page3-part2 h3 {
+  margin-right: 1vw;
+  font-size: 1.5vw;
+  font-weight: 400;
+  color: #434b34;
+}
+
+#page3-part2 i {
+  font-size: 1.4vw;
+  background-color: #65714f;
+  color: #e3e3c4;
+  padding: 0.1vw 0.9vw;
+  border-radius: 20px;
+}
