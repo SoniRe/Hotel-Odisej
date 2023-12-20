@@ -155,7 +155,6 @@ tl2.from("#page3>img", {
     trigger: "#page3>img",
     scroller: "#main",
     scrub: 3,
-    markers: true,
     start: "top 120%",
     end: "top 100%",
   },
